@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Login V2</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="resposive">	
+<div class="limiter">
+	<form class="login100" id="form" onsubmit="return validate()">
+		<h1>Login</h1>
+		<div class="input">
+			<input class="input100" id="username" placeholder="Username/Email" type="text" name="email">
+			<small>error</small>
+		</div>
+	
+		<div class="input">
+			<input class="input100" id="password" placeholder="Password" type="password" name="pass">
+			<small>error</small>
+		</div>
+		<div>
+			<button class="login-btn" type="submit">
+				Login
+			</button>
+		</div>
+		<div class="sign-up">
+			<span class="txt1">
+				Don’t have an account?
+			</span>
+			
+			<a href="#tosignin">
+				Sign Up
+			</a>
+		</div>
+	</form>
+	<div id="register" class="animate form">
+		<form action="mysuperscript.php" autocomplete="on">
+			<h1> Sign up </h1>
+			<p>
+				<label for="usernamesignup" class="uname" data-icon="u">username</label>
+				<input id="usernamesignup" name="usernamesignup" required="required" type="text"
+					placeholder="mysuperusername690" />
+			</p>
+			<p>
+				<label for="emailsignup" class="youmail" data-icon="e">email</label>
+				<input id="emailsignup" name="emailsignup" required="required" type="email"
+					placeholder="mysupermail@mail.com" />
+			</p>
+			<p>
+				<label for="passwordsignup" class="youpasswd" data-icon="p">password </label>
+				<input id="passwordsignup" name="passwordsignup" required="required" type="password"
+					placeholder="eg. X8df!90EO" />
+			</p>
+			<p>
+				<label for="passwordsignup_confirm" class="youpasswd" data-icon="p">confirm password </label>
+				<input id="passwordsignup_confirm" name="passwordsignup_confirm" required="required" type="password"
+					placeholder="eg. X8df!90EO" />
+			</p>
+			<p>
+				<input type="submit" class="signin_button" value="Sign up" />
+			</p>
+			<p class="change_link">
+				Already a member ?
+				<a href="#tologin" class="to_register"> Log in </a>
+			</p>
+		</form>
+	</div>
+</div>
+</div>		
+	<script src="validate.js"></script>
+	<script src="signup.js"></script>
+
+</body>
+</html>
